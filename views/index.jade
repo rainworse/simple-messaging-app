@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  for item in messages
+    div= item.added + " " + item.user + ": " + item.text
+
